@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css"/>
+    <title>Jared's blog</title>
+    </head>
+
+    
+  <body>
+    <header class="page-header">
+    <h1 id="website-name">
+     <a href="/Users/jaredsukha/devacademy/jared-sukha.github.io/index.html" style="color: #000000; text-decoration: none;">
+       BLOGGITY BLOG BLOG
+      </a>
+    </h1>
+  </header>
+   <div style="margin: auto;   width: 60%;">
+      <div class="container" style="margin-top: 125px">
+        <div>
+        <h2>What is the difference between Margin, Border, and Padding?</h2>
+        <div style="display:flex; flex-wrap: wrap; justify-content: space-between;">
+        <div style="max-width: 475px">
+        <p>When using HTML elements, we must think of a box that wraps around the object. This box has several properties:
+          <ul style="line-height: 1.5;">
+            <li><strong>Margin</strong> - The area or space immediately outside of the box</li>
+            <li><strong>Border</strong> - A border or frame that sits on the edge of the box</li>
+            <li><strong>Padding</strong> - An area that sits around the content but within the edge of the box</li>
+            <li><strong>Content</strong> - The content of the box (Text or images)</li>
+          </ul>
+        </div>
+        <div> 
+      <figure style="margin: 5px">
+        <img src="/Users/jaredsukha/devacademy/jared-sukha.github.io/images/box-model.png" alt="Box Model" style="width:350px; min-width: 80%;">
+        <figcaption>Fig.1 - Box Model (sourced from w3schools.com)</figcaption>
+      </figure>
+        </p>
+      </div>
+    </div>
+      <div class="flex-lesson-container">
+    <div class="flex-lesson-item" style="background-color: rgb(255, 187, 0)">
+    <h2 class="blog-h2">Margin Examples</h2>
+    <span>Below is an example of an HTML element (a blue box with text content) with a 20px margin. <br> 
+      <em>Note the space around the blue box in relation to the text above and below it. It even has clear space on the left and right as well.</em></span>
+      <br>
+    <p style="width:200px; background-color:#0af3ff; margin: 20px;display: inline-block">
+      This element has a margin of 20px 
+    </p>
+    <p style="margin: 0px;">Now an example with a 0px margin...</p>
+    <div style="width:200px; background-color:#0af3ff; margin: 0px;display: inline-block">
+      This element has a margin of 0px 
+    </div>
+    <p style="margin: 0px;"><em>Note how the space has reduced between the blue box and the surrounding text.</em></p>
+  </div>
+    <div class="flex-lesson-item" style="background-color:bisque">
+      <h2 class="blog-h2">Border Examples</h2>
+      <span>Here is an example with a 5pt thick solid red border.</span>
+      <br>
+      <p style="min-width:100px; background-color:#0af3ff; border: 5pt solid red; display: inline-block">
+        This element has a 5pt thick solid red border 
+      </p>
+      <p>And now with a 10pt thick dashed green border.</p>
+      <p style="min-width:100px; background-color:#0af3ff; border: 10pt dashed green; margin: 0px;display: inline-block">
+        This element has a 10pt thick dashed green border.
+      </p>
+    </div>
+    <div class="flex-lesson-item" style="background-color:magenta;">
+      <h2 class="blog-h2">Padding Examples</h2>
+      <span>The following is an example with 20px padding.</span>
+      <br>
+      <p style="margin-top: 0px;"><em>Note how the space between the text and the edge of the box has increased.</em></p>
+      <p style="min-width:100px; background-color:#0af3ff; margin: 0px; padding:20px; display: inline-block">
+        This element has padding of 20px
+      </p>
+      <p>And with 0px padding.</p>
+      <p style="min-width:100px; background-color:#0af3ff; margin: 0px; padding: 0px; display: inline-block">
+        This element has 0px padding.
+      </p>
+     </div>
+    
+    </div>
+  </div>
+  </div>
+
+  
+
+  </body>
+</html>
