@@ -17,6 +17,8 @@ body{
   margin: 0px;
   text-align:center;
   font-family: Helvetica;
+  font-size: 11pt;
+  line-height: normal;
 }
 
 
@@ -50,9 +52,15 @@ text-align: center;
   background-color: aqua;
 }
 
+
 .container{
   background-color: rgb(235, 235, 235);
   padding: 20px 20px;
+  text-align:left;
+}
+.text-container{
+  background-color: rgb(255, 255, 255);
+  padding: 20px 20%;
   text-align:left;
 }
 .flex-lesson-container{
@@ -68,5 +76,14 @@ text-align: center;
 .flex-lesson-item{
   width: 230px;
   padding: 0px 20px 20px 20px;
+}
+
+.code-container{
+  background-color: rgb(231, 231, 231);
+  padding: 10px;
+  margin: 10px; 
+  text-align:left;
+  font-family: monospace;
+  display: inline-block;
 }
 

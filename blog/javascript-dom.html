@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Jared's Blog - javascript-dom</title>
+    </head>
+    <body>
+      <header class="page-header">
+        <h1 id="website-name">
+         <a href="../index.html" style="color: #000000; text-decoration: none;">
+           BLOGGITY BLOG BLOG
+          </a>
+        </h1>
+      </header>
+      <div style="margin: auto;   width: 60%;">
+      <div class="text-container" style="margin-top: 125px">
+      <h3>
+        An analogy to describe JavaScript and its relationship to HTML and CSS.
+      </h3>
+        <p>
+         Lets say you went to a costume party, and you went as yourself (because you're that cool). Your body provides the structure of the costume which we can dressup a little with clothes from your wardrobe, this can be represented as HTML.
+         </p>
+         <p>
+         Now, how about if you decided to swing past the Main Costume Store Shop? You could quickly put on a ninja costume (or any other choice of costume) from the style rack - the CSS is what provides that all-in-one costume. 
+        </p>
+        <p></p>
+         So you look pretty cool in your ninja costume, but how can you look cooler...? By adding LED lights of course!! Now you have lights that can be swiched on with a button, and a sound reactive LED display chest piece, these extra cool features and levels of interactivity can be considered the javascript of your costume.
+        </p>
+        <iframe src="https://giphy.com/embed/l4FGI9b0hoy5sIzSw" width="480" height="265" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nbcagt-nbc-agt-l4FGI9b0hoy5sIzSw">via GIPHY</a></p>
+
+      <h3>
+        Explain control flow and loops using an example process from everyday life, for example, 'waking up' or 'brushing your teeth'. (But not those).
+      </h3>
+        <p>
+          Control flow is the order of doing things from start to finish, like reading and following a recipe from the top of the page through to the bottom.  Certain elements can alter this control flow like 
+          conditionals and loops.
+          Usually when following a recipe and something needs time in the oven, I like to interrupt the control flow by doing a 'mid-recipe' dishwash this could be considered as entering a for loop, because I would have a pile(array) of dishes that would need to perform the dishwashing function <em>for</em> each dish in the pile that that would then be cleaned and placed into the dish rack (another array). So I would be looping through the act of washing a dish for every dirty dish.        
+          Once the loop has completed, control flow would be resumed by picking up the next instruction after the loop.
+        </p>
+      <h3>
+        Describe what the DOM is and an example of how you might interact with it.
+      </h3>
+        <p>
+          The DOM or Document Object Model is essentially a tree of objects. We can access, change, add, or delete HTML elements via the DOM.
+          <br>
+          <br>
+          <img src="../images/img_htmltree.gif" alt="Tree like structure image of HTML DOM">
+          <em>Source:</em> <a href="https://www.w3schools.com/whatis/whatis_htmldom.asp">w3schools</a><br>
+          <br>
+          One way to access the dom is by using the GetElementById() Method, this method allows to select an element by it's id tag in the DOM. 
+        </p>
+          <h3>
+            Explain the difference between accessing data from arrays and objects.
+          </h3>
+            <p>
+              An Array can be thought of as an ordered list, which is written between square brackets and separated by commas.
+              </p>
+              <div class="code-container">
+                  listOfAnimals = ['bear', 'cat', 'dog', 'snake']
+              </div>
+              <br>
+              <br>
+              <p>
+              The elements in an array can be accessed by their index (position) in the list. Now, an important thing to note is that arrays are 'zero-indexed', which means that the index numbering starts at 0. In the above listOfAnimals example, the bear index/position = 0, cat = 1, dog = 2, snake = 3. This is super important to remember when accessing data from arrays because we access the data by its position in the list.
+              </p>
+
+              <p>
+              An object could be considered an unordered list of properties, which is written between curly brackets and separated by commas. Here are a list of properties for a bear and the value set for each property next to it.
+              <br>
+              <div class="code-container">
+                let bear = {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;numberOfLegs: 4,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;taxonomy: "Mammal",<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;aFamousExample: "Paddington"<br>
+                  }<br>
+            </div>
+              </p>
+          
+         <p>
+              Why did I put the brackets like that? Because it looks nicer for humans to read, note how the key (property) and its corresponding value is pretty easy to pick out. Check out below (ewwwww, yuck!)	
+         </p>
+<br>      
+              <div class="code-container">
+              let bear = {numberOfLegs: 4,	taxonomy: "Mammal",aFamousExample: "Paddington"}
+              </div>
+<br>        <p>
+              We can access the value of an objects property by using dot notation (object.key) so to obtain the taxonomy of the bear above we would refer to 'bear.taxonomy' which would return the value 'Mammal'.
+            </p>
+            </p>
+            <h3>
+              Explain what functions are and why they are helpful.
+            </h3>
+            <p>
+              Functions are essentially a group of instructions to help reduce repetition and wordiness in our code. Let's look at the following calculations:
+            </p>
+            <div class="code-container">
+                let points1 = 100;<br>
+                let games1 = 4;<br>
+                alert("Points per game = " + points1/games1);<br>
+                <br>
+                let points2 = 125;<br>
+                let games2 = 3;<br>
+                alert("Points per game = " + points2/games2);<br>
+                <br>
+                let points3 = 40;<br>
+                let games3 = 6;<br>
+                alert("Points per game = " + points3/games3);<br>
+                <br>
+                let points4 = 200;<br>
+                let games4 = 5;<br>
+                alert("Points per game = " + points4/games4);<br>
+            </div>
+            <p>
+              The above is a little reptitive and wordy. Let's have a go at how it looks when we introduce a function.
+
+            </p>
+            <div class="code-container">
+              function pointsPerGame(points,games){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("Points per game = " + points/games);<br>
+              }<br>
+              pointsPerGame(100,4);<br>
+              pointsPerGame(125,3);<br>
+              pointsPerGame(40,6);<br>
+              pointsPerGame(200,5);<br>
+          </div>
+          <p>
+            Wow! That looks so much neater, thank goodness for functions.
+
+          </p>
+
+</div>
+</div>
+  </body>
+</html>
